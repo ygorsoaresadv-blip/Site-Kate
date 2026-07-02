@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadoras Jurídicas Gratuitas | Freire, Vaccari e Silva Advogados</title>
-  <meta name="description" content="Estime gratuitamente suas verbas rescisórias, a atualização monetária de um valor ou sua proximidade da aposentadoria. Ferramentas gratuitas do FVS Advogados.">
+  <meta name="description" content="Estime gratuitamente suas verbas rescisórias e a atualização monetária de um valor. Ferramentas gratuitas do FVS Advogados.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Calculadoras Jurídicas Gratuitas | FVS Advogados">
-  <meta property="og:description" content="Verbas rescisórias, atualização de valores e aposentadoria — estimativas gratuitas e instantâneas.">
+  <meta property="og:description" content="Verbas rescisórias e atualização de valores — estimativas gratuitas e instantâneas.">
   <meta property="og:image" content="assets/images/logo/logo-horizontal-azul.png">
   <meta property="og:locale" content="pt_BR">
 
@@ -78,10 +78,6 @@
           <button class="calc-tab" role="tab" id="tab-civel" aria-selected="false" aria-controls="panel-civel">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18"/><path d="M5 6h14"/><path d="M5 6 2 12c0 1.7 1.3 3 3 3s3-1.3 3-3L5 6z"/><path d="m19 6-3 6c0 1.7 1.3 3 3 3s3-1.3 3-3l-3-6z"/></svg>
             Cível
-          </button>
-          <button class="calc-tab" role="tab" id="tab-prev" aria-selected="false" aria-controls="panel-prev">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            Previdenciária
           </button>
         </div>
 
@@ -200,57 +196,6 @@
           </div>
         </div>
 
-        <!-- ===== C) PREVIDENCIÁRIA ===== -->
-        <div class="calc-panel" id="panel-prev" role="tabpanel" aria-labelledby="tab-prev">
-          <form class="calc-form" id="form-prev" novalidate>
-            <h2>Proximidade da aposentadoria</h2>
-            <p class="form-hint">Triagem simplificada pelas regras gerais pós-Reforma da Previdência (regra permanente). Não calcula o valor do benefício.</p>
-
-            <div class="field">
-              <label for="prev-sexo">Sexo <span class="hint">— as regras de idade e contribuição diferem</span></label>
-              <select id="prev-sexo">
-                <option value="F">Feminino</option>
-                <option value="M">Masculino</option>
-              </select>
-            </div>
-
-            <div class="field">
-              <label for="prev-idade">Idade atual (anos)</label>
-              <input type="number" id="prev-idade" min="0" max="120" step="1" placeholder="Ex.: 58" required>
-              <span class="error">Informe uma idade válida.</span>
-            </div>
-
-            <div class="field-row">
-              <div class="field">
-                <label for="prev-anos">Tempo de contribuição — anos</label>
-                <input type="number" id="prev-anos" min="0" step="1" placeholder="Ex.: 22" required>
-                <span class="error">Informe um número válido (0 ou mais).</span>
-              </div>
-              <div class="field">
-                <label for="prev-meses">— e meses</label>
-                <input type="number" id="prev-meses" min="0" max="11" step="1" placeholder="Ex.: 4" required>
-                <span class="error">Informe de 0 a 11 meses.</span>
-              </div>
-            </div>
-
-            <button type="submit" class="btn btn--primary">Verificar proximidade</button>
-          </form>
-
-          <div>
-            <div class="calc-result" aria-live="polite">
-              <h3>Resultado da triagem</h3>
-              <div id="result-prev">
-                <p class="placeholder">Preencha o formulário ao lado para verificar sua situação frente aos requisitos gerais de idade e contribuição.</p>
-              </div>
-              <a class="btn btn--whatsapp" id="cta-prev" hidden href="https://wa.me/5511993368670?text=Ol%C3%A1%21%20Usei%20a%20calculadora%20previdenci%C3%A1ria%20do%20site%20e%20gostaria%20de%20uma%20an%C3%A1lise%20completa%20do%20meu%20tempo%20de%20contribui%C3%A7%C3%A3o." target="_blank" rel="noopener">Existem regras de transição que podem te aposentar mais cedo — fale com nosso time</a>
-            </div>
-            <p class="calc-disclaimer">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.7 18-8-14a2 2 0 0 0-3.5 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
-              <span><strong>⚠️ Este resultado é uma estimativa aproximada e não substitui uma análise jurídica profissional.</strong> Existem regras de transição (pontos, pedágio, idade progressiva) que podem ser mais vantajosas no seu caso. Os resultados variam conforme o histórico real de contribuições (CNIS), legislação vigente e documentação.</span>
-            </p>
-          </div>
-        </div>
-
       </div>
     </section>
   </main>
@@ -299,7 +244,7 @@
         </div>
       </div>
       <div class="footer-oab">
-        Dr. Gustavo da Silva Freire — [OAB/SP nº XXXXX — substituir] &nbsp;•&nbsp; Dr. Genilton Freire — [OAB/SP nº XXXXX — substituir] &nbsp;•&nbsp; Dra. Kate Mazin Vaccari — [OAB/SP nº XXXXX — substituir] &nbsp;•&nbsp; Dr. Misael Francisco da Silva — [OAB/SP nº XXXXX — substituir]
+        Dr. Gustavo da Silva Freire — OAB/SP nº 500.937 &nbsp;•&nbsp; Dr. Genilton Freire — OAB/SP nº 483.324 &nbsp;•&nbsp; Dra. Kate Mazin Vaccari — OAB/SP nº 338.432 &nbsp;•&nbsp; Dr. Misael Francisco da Silva — OAB/SP nº 445.939
       </div>
       <div class="footer-bottom">
         <span>© <span id="current-year">2026</span> Freire, Vaccari e Silva Advogados Associados. Todos os direitos reservados.</span>

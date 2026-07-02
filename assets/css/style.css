@@ -265,6 +265,18 @@ h3 { font-size: var(--fs-h3); }
   gap: .1rem;
 }
 .has-dropdown.is-open .dropdown { display: flex; }
+/* Ponte invisível que cobre o vão de 14px entre "Áreas" e o menu suspenso,
+   para o hover não ser interrompido ao mover o cursor (só no desktop). */
+@media (min-width: 861px) {
+  .dropdown::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: 0;
+    right: 0;
+    height: 16px;
+  }
+}
 .dropdown a {
   display: block;
   padding: .6rem .9rem;
@@ -960,7 +972,10 @@ img.avatar { object-fit: cover; object-position: center 25%; }
     position: fixed;
     top: var(--header-h);
     left: 0; right: 0;
-    bottom: 0;
+    /* altura explícita: o backdrop-filter do header cria um containing block
+       para elementos fixed, então bottom:0 colapsaria o painel. */
+    height: calc(100vh - var(--header-h));
+    height: calc(100dvh - var(--header-h));
     background: var(--paper);
     border-top: 1px solid var(--line);
     flex-direction: column;
