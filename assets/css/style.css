@@ -211,7 +211,10 @@ h3 { font-size: var(--fs-h3); }
 .brand { flex: none; }
 .brand img { width: clamp(170px, 18vw, 225px); height: auto; }
 
-.main-nav ul {
+/* filho direto: NÃO deve atingir o <ul class="dropdown"> aninhado,
+   senão o descendente .main-nav ul (0,1,1) venceria .dropdown{display:none}
+   (0,1,0) e o menu suspenso ficaria sempre visível. */
+.main-nav > ul {
   display: flex;
   align-items: center;
   gap: clamp(1rem, 2vw, 2rem);
